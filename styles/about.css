@@ -1,0 +1,221 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #e9e9e9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: #2196f3;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.nav .logo {
+  color: white;
+  padding: 10px;
+}
+
+.nav .topnav {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.nav .menu {
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+.nav .menu-active {
+  padding: 10px 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+.nav .menu:hover {
+  background-color: #ccc;
+  color: black;
+  transition: background-color 0.3s;
+}
+
+.nav .menu-active {
+  background-color: #ccc;
+  color: black;
+}
+
+.nav .menu a,
+.nav .menu-active a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav .topnav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav .topnav {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .nav .menu,
+  .nav .menu-active {
+    width: auto;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav .topnav {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .nav .menu,
+  .nav .menu-active {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+  }
+}
+
+.main-about {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  margin: 25px 40px;
+  background-color: white;
+  gap: 30px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(33.333% - 30px);
+  width: 250px;
+  /* Adjust width to ensure three cards fit per row with space between */
+  box-sizing: border-box;
+}
+
+.about-card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.about-card .about-position,
+.about-card .about-name {
+  margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .main-about {
+    margin: 15px;
+    /* Adjust margin for smaller screens */
+  }
+
+  .about-card {
+    width: calc(50% - 15px);
+    /* Adjust width for two cards per row with space between */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-about {
+    margin: 10px;
+    /* Adjust margin for even smaller screens */
+  }
+
+  .about-card {
+    width: calc(100% - 20px);
+    /* Adjust width for one card per row */
+  }
+}
+
+.about-us {
+  background-color: white;
+  padding: 10px;
+  margin: 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.about-us .about-us-content {
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .main-content p {
+  text-align: justify;
+}
+
+.footer {
+  padding: 20px;
+  /* Tambahkan sedikit padding agar konten tidak terlalu berdekatan dengan tepi */
+  background-color: black;
+  color: white;
+  text-align: center;
+  /* Tengahkan teks */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+    /* Kurangi padding saat layar menjadi lebih kecil */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px;
+    /* Kurangi padding lebih lanjut untuk layar yang lebih kecil */
+  }
+}

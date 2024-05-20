@@ -1,0 +1,227 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #e9e9e9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: #2196f3;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.nav .logo {
+  color: white;
+  padding: 10px;
+}
+
+.nav .topnav {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.nav .menu {
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+.nav .menu-active {
+  padding: 10px 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+.nav .menu:hover {
+  background-color: #ccc;
+  color: black;
+  transition: background-color 0.3s;
+}
+
+.nav .menu-active {
+  background-color: #ccc;
+  color: black;
+}
+
+.nav .menu a,
+.nav .menu-active a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav .topnav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav .topnav {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .nav .menu,
+  .nav .menu-active {
+    width: auto;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav .topnav {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .nav .menu,
+  .nav .menu-active {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+  }
+}
+
+.wrapper-menu-visualization {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.wrapper-menu-visualization a {
+  color: black;
+}
+
+.wrapper-menu-visualization .menu-card-active,
+.wrapper-menu-visualization .menu-card {
+  background-color: white;
+  width: calc(33.33% - 20px);
+  width: 200px;
+  /* Mengatur lebar kartu sesuai dengan tiga kartu per baris */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: block;
+}
+
+.wrapper-menu-visualization .menu-card-active {
+  background-color: #2196f3;
+  color: white;
+}
+
+.wrapper-menu-visualization .menu-card:hover {
+  background-color: #2196f3;
+  color: white;
+}
+
+.wrapper-menu-visualization .menu-card menu-title {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .wrapper-menu-visualization .menu-card-active,
+  .wrapper-menu-visualization .menu-card {
+    width: calc(50% - 20px);
+    /* Mengatur lebar kartu sesuai dengan dua kartu per baris */
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper-menu-visualization .menu-card-active,
+  .wrapper-menu-visualization .menu-card {
+    width: calc(100% - 20px);
+    /* Mengatur lebar kartu agar satu kartu per baris */
+  }
+}
+
+.wrapper-visualization {
+  display: flex;
+  flex-wrap: wrap;
+  /* Agar item bisa wrap ke baris baru saat layar lebih kecil */
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  max-width: 590px;
+  /* Gunakan max-width agar kartu tidak melebihi lebar tertentu */
+  width: 100%;
+  /* Lebar kartu akan mengikuti lebar parent-nya */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.card img {
+  max-width: 100%;
+  /* Pastikan gambar tidak melebihi lebar kartu */
+}
+
+.footer {
+  padding: 20px;
+  /* Tambahkan sedikit padding agar konten tidak terlalu berdekatan dengan tepi */
+  background-color: black;
+  color: white;
+  text-align: center;
+  /* Tengahkan teks */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+    /* Kurangi padding saat layar menjadi lebih kecil */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px;
+    /* Kurangi padding lebih lanjut untuk layar yang lebih kecil */
+  }
+}

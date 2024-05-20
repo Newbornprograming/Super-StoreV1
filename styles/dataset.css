@@ -1,0 +1,231 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #e9e9e9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: #2196f3;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.nav .logo {
+  color: white;
+  padding: 10px;
+}
+
+.nav .topnav {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.nav .menu {
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+.nav .menu-active {
+  padding: 10px 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+.nav .menu:hover {
+  background-color: #ccc;
+  color: black;
+  transition: background-color 0.3s;
+}
+
+.nav .menu-active {
+  background-color: #ccc;
+  color: black;
+}
+
+.nav .menu a,
+.nav .menu-active a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav .topnav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav .topnav {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .nav .menu,
+  .nav .menu-active {
+    width: auto;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav .topnav {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .nav .menu,
+  .nav .menu-active {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+  }
+}
+
+.main {
+  background-color: white;
+  padding: 20px;
+  margin: 25px 40px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.main .main-content {
+  margin-bottom: 20px;
+}
+
+.main .image-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .main {
+    margin: 25px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    margin: 25px 10px;
+    padding: 15px;
+  }
+}
+
+.metadata {
+  background-color: white;
+  padding: 10px;
+  margin: 25px 40px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.metadata .metadata-title {
+  padding: 10px;
+  text-align: left;
+}
+
+.metadata-card {
+  display: flex;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.no-metadata {
+  background-color: #18067a;
+  color: white;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  border-radius: 8px;
+}
+
+.name-metadata {
+  background-color: #d0d1eb;
+  color: black;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-grow: 1;
+  border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .metadata {
+    margin: 25px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .metadata {
+    margin: 25px 10px;
+    padding: 15px;
+  }
+}
+
+.footer {
+  padding: 20px;
+  /* Tambahkan sedikit padding agar konten tidak terlalu berdekatan dengan tepi */
+  background-color: black;
+  color: white;
+  text-align: center;
+  /* Tengahkan teks */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+    /* Kurangi padding saat layar menjadi lebih kecil */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px;
+    /* Kurangi padding lebih lanjut untuk layar yang lebih kecil */
+  }
+}
